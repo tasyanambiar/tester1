@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title> King Cone Promotions & Specials </title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="Promotions and Monthly Specials at King Cone Home Made Ice Cream">
+		<meta name="keywords" content="King Cone, Promotions, Specials, Ice Cream, Plover Wisconsin">
+		<meta name="author" content="King Cone">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+		<style>
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body{
+				font-family: 'Nunito', sans-serif;
+				background: #fff8f1;
+				color: #35221b;
+			}
+
+			img{
+				max-width: 100%;
+				display: block;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			header{
+				background: #15307d;
+				border-bottom: 3px solid #0f1d52;
+			}
+
+			.brand{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 18px;
+				padding: 20px;
+				border-bottom: 2px solid rgba(255,255,255,0.15);
+			}
+
+			.brand img{
+				width: 65px;
+			}
+
+			.brand h1{
+				font-family: 'Kavoon', sans-serif;
+				font-size: 52px;
+				color: white;
+			}
+
+			nav{
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				padding: 12px 20px;
+				background: #1f2f86;
+				border-top: 1px solid rgba(255,255,255,0.10);
+			}
+
+			nav a{
+				color: white;
+				padding: 10px 14px;
+				border-radius: 10px;
+				font-weight: 700;
+			}
+
+			nav a:hover{
+				background: rgba(255,255,255,0.15);
+			}
+
+			.active{
+				background: #e43a3a;
+			}
+
+			main{
+				padding: 40px 0 60px;
+			}
+
+			.mainsection, .contactbox, .calendar-container{
+				border-radius: 20px;
+				border: 2px solid #ead2b7;
+			}
+
+			.mainsection{
+				background: #fff1e4;
+				padding: 30px;
+				margin-bottom: 25px;
+			}
+
+			.mainbox{
+				display: flex;
+				gap: 25px;
+			}
+
+			.maintext{
+				width: 50%;
+			}
+
+			.mainpic{
+				width: 50%;
+			}
+
+			.maintext h2{
+				font-family: 'Pacifico', cursive;
+				font-size: 48px;
+				color: #5b2a00;
+				margin-bottom: 12px;
+			}
+
+			.maintext p, .calendar-day p{
+				line-height: 1.8;
+				font-size: 18px;
+			}
+
+			.maintext a{
+				color: #b51f1f;
+				font-weight: 800;
+			}
+
+			.buttonrow{
+				margin-top: 20px;
+				display: flex;
+				gap: 12px;
+			}
+
+			.maintext .button{
+				display: inline-block;
+				padding: 14px 22px;
+				border-radius: 12px;
+				font-weight: 800;
+				color: white;
+			}
+
+			.buttonblue{
+				background: #1f2f86;
+				border-color: #16225f;
+			}
+
+			.mainpic img, .calendar-day img{
+				border-radius: 18px;
+				border: 2px solid #d9c2a8;
+			}
+
+			.mainpic img{
+				height: 320px;
+				object-fit: cover;
+			}
+
+			.contactbox{
+				background: white;
+				padding: 30px;
+			}
+
+			.calendar-container{
+				background: #fff4e8;
+				padding: 30px;
+			}
+
+			.calendar-container h3{
+				font-size: 28px;
+				margin-bottom: 20px;
+				color: #1f2f86;
+				text-align: center;
+			}
+
+			.calendar-grid {
+				display: grid;
+				grid-template-columns: 32% 32% 32% ; 
+				gap: 25px;
+			}
+
+			.calendar-day {
+				background: white;
+				border: 2px solid #ead2b7;
+				border-radius: 16px;
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+			}
+
+			.date-badge {
+				background: #1f2f86;
+				color: white;
+				font-weight: 800;
+				font-size: 16px;
+				padding: 6px 12px;
+				border-radius: 8px;
+				align-self: flex-start;
+			}
+
+			.promo-title {
+				font-size: 20px;
+				font-weight: 800;
+				color: #5b2a00;
+			}
+
+			.calendar-day img {
+				width: 100%;
+				height: auto;
+				max-height: 180px;
+				object-fit: cover;
+				margin-top: auto;
+			}
+
+			.footerbox{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+				padding: 0 20px;
+			}
+
+			.footerlinks a{
+				color: white;
+				margin-right: 14px;
+			}
+
+			.socialbox{
+				display: flex;
+				gap: 10px;
+			}
+
+			.socialbox a{
+				width: 46px;
+				height: 46px;
+				background: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #d9d9d9;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<div class="brand">
+				<img src="images/kingconelogo.png" alt="King Cone Logo Image">
+				<h1>King Cone</h1>
+			</div>
+
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="services.html">Services</a>
+				<a href="regularflavors.html">Regular Flavors</a>
+				<a href="seasonalflavors.html">Seasonal Flavors</a>
+				<a href="promotions.html" class="active">Promotions</a>
+				<a href="eventsweddingpricing.html">Events / Wedding Pricing</a>
+				<a href="contactus.html">Contact Us</a>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<div class="page">
+
+				<section class="mainsection">
+
+					<div class="mainbox">
+
+						<div class="maintext">
+
+							<h2>Promotions & Specials</h2>
+
+							<p>
+								At King Cone Home Made Ice Cream, we love making our award-winning flavors even sweeter with unique combinations and special theme celebrations! Drop by our Plover shop during these special periods to discover what unique favorites await you.
+							</p>
+
+							<div class="buttonrow">
+								<a href="contactus.html" class="button buttonblue">Contact Us</a>
+							</div>
+
+						</div>
+
+						<div class="mainpic">
+							<img src="images/kingconeshop.webp" alt="King Cone Special Flavors Showcase">
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="contactbox">
+
+					<div class="calendar-container">
+						<h3>Upcoming Events & Promotions Calendar</h3>
+						
+						<div class="calendar-grid">
+							
+							<div class="calendar-day">
+								<div class="date-badge">March (All Month)</div>
+								<div class="promo-title">Mint Mania</div>
+								<img src="images/mintmania.jpg" alt="Mint Mania Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">March 17th</div>
+								<div class="promo-title">St. Patrick's Day Special</div>
+								<img src="images/patricksdayspecial.jpg" alt="St. Patrick's Day Special Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">April 7th</div>
+								<div class="promo-title">Coffees 'N' Cream</div>
+								<img src="images/coffeeandcream.jpg" alt="Coffees 'N' Cream Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">April 30th</div>
+								<div class="promo-title">Oatmeal Day</div>
+								<img src="images/oatmealday.jpg" alt="Oatmeal Day Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">May 5th</div>
+								<div class="promo-title">Cinco de Mayo</div>
+								<img src="images/cincodemaya.jpg" alt="Cinco de Mayo Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">May 11th</div>
+								<div class="promo-title">Mother's Day</div>
+								<img src="images/mothersday.jpg" alt="Mother's Day Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="calendar-item">
+									<div class="date-badge">June 2nd</div>
+									<div class="promo-title">Strawberry Festival</div>
+								</div>
+								<img src="images/strawberryfestival.jpg" alt="Strawberry Festival Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">June 12th</div>
+								<div class="promo-title">Peanut Butter Sandwich Day</div>
+								<img src="images/peanutbuttersandwichday.jpg" alt="Peanut Butter Sandwich Day Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">June 15th</div>
+								<div class="promo-title">Father's Day</div>
+								<img src="images/fathersday.jpg" alt="Father's Day Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">July 8th</div>
+								<div class="promo-title">Christmas in July</div>
+								<img src="images/christmasinjuly.jpg" alt="Christmas in July Flyer">
+							</div>
+
+							<div class="calendar-day">
+								<div class="date-badge">July 9th</div>
+								<div class="promo-title">Sugar Cookie Day</div>
+								<img src="images/sugarcookieday.jpg" alt="Sugar Cookie Day Flyer">
+							</div>
+
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer>
+
+			<div class="footerbox">
+
+				<div class="footerlinks">
+					<a href="#">Terms of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Cookie Settings</a>
+					<a href="#">Your Privacy Choices</a>
+					<a href="#">Web Accessibility</a>
+					<a href="#">Copyright. King Cone, LLC. 2020</a>
+					<a href="#">Created & Designed by Tasya Nambiar</a>
+				</div>
+
+				<div class="socialbox">
+					<a href="#"><img src="images/instagram.png" alt="Instagram" width="25px" height="25px"></a>
+					<a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+					<a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

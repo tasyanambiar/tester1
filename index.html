@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title> King Cone Homemade Ice Cream - Home </title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="Welcome to King Cone Homemade Ice Cream in Plover, Wisconsin. Enjoy our fresh monthly favorites, seasonal flavors, and special treats.">
+		<meta name="keywords" content="King Cone, Homemade Ice Cream, Home, Plover Wisconsin, Monthly Specials, Ice Cream Shop">
+		<meta name="author" content="King Cone">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+		<style>
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body{
+				font-family: 'Nunito', sans-serif;
+				background: #fff8f1;
+				color: #35221b;
+			}
+
+			img{
+				max-width: 100%;
+				display: block;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			header{
+				background: #15307d;
+				border-bottom: 4px solid #0f1d52;
+			}
+
+			.brand{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 18px;
+				padding: 22px;
+				border-bottom: 2px solid rgba(255,255,255,0.15);
+			}
+
+			.brand img{
+				width: 65px;
+			}
+
+			.brand h1{
+				font-family: 'Kavoon', sans-serif;
+				font-size: 52px;
+				color: white;
+				text-shadow: 2px 2px 0px #0f1d52;
+			}
+
+			nav{
+				display: flex;
+				justify-content: center;
+				gap: 12px;
+				padding: 14px 20px;
+				background: #1f2f86;
+			}
+
+			nav a{
+				color: white;
+				padding: 10px 18px;
+				border-radius: 12px;
+				font-weight: 700;
+			}
+
+			nav a:hover{
+				background: rgba(255,255,255,0.15);
+			}
+
+			.active{
+				background: #e43a3a;
+				box-shadow: 0 4px 0px #b51f1f;
+			}
+
+			main{
+				padding: 50px 0 80px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.mainsection, .contactbox, .box, .picturebox{
+				border-radius: 24px;
+				border: 2px solid #ead2b7;
+			}
+
+			.mainsection{
+				background: #fff1e4;
+				padding: 50px;
+				margin-bottom: 35px;
+			}
+
+			.mainbox{
+				display: flex;
+				align-items: center;
+				gap: 40px;
+			}
+
+			.maintext{
+				width: 50%;
+			}
+
+			.mainpic{
+				width: 50%;
+			}
+
+			.maintext h2{
+				font-family: 'Pacifico', cursive;
+				font-size: 56px;
+				color: #5b2a00;
+				margin-bottom: 16px;
+				line-height: 1.2;
+			}
+
+			.maintext p{
+				line-height: 1.8;
+				font-size: 20px;
+				color: #4a352d;
+			}
+
+			.buttonrow{
+				margin-top: 28px;
+			}
+
+			.maintext .button{
+				display: inline-block;
+				padding: 16px 32px;
+				border-radius: 14px;
+				font-weight: 800;
+				font-size: 18px;
+				color: white;
+				background: #1f2f86;
+				box-shadow: 0 4px 0px #16225f;
+			}
+
+			.mainpic img{
+				width: 100%;
+				height: 400px;
+				object-fit: cover;
+				border-radius: 18px;
+				border: 2px solid #d9c2a8;
+			}
+
+			.contactbox{
+				background: white;
+				padding: 40px;
+				margin-bottom: 35px;
+			}
+
+			.contactrow{
+				display: flex;
+				gap: 30px;
+			}
+
+			.leftside{
+				width: 50%;
+			}
+
+			.rightside{
+				width: 50%;
+			}
+
+			.box{
+				background: #fff8f2;
+				padding: 30px;
+				height: 100%;
+			}
+
+			.box h3{
+				font-size: 28px;
+				margin-bottom: 14px;
+				color: #1f2f86;
+				font-weight: 800;
+			}
+
+			.box p{
+				line-height: 1.8;
+				font-size: 18px;
+				color: #4a352d;
+			}
+
+			.showcase-heading{
+				text-align: center;
+				font-family: 'Kavoon', sans-serif;
+				font-size: 36px;
+				color: #5b2a00;
+				margin: 50px 0 25px;
+			}
+
+			.showcase-grid{
+				display: flex;
+				gap: 25px;
+			}
+
+			.picturebox{
+				background: white;
+				padding: 24px;
+				width: 100%;
+				text-align: center;
+			}
+
+			.picturebox img{
+				width: 100%;
+				height: 280px;
+				object-fit: cover;
+				border-radius: 14px;
+				border: 2px solid #d9c2a8;
+				margin-bottom: 16px;
+			}
+
+			.picturebox h3{
+				font-size: 22px;
+				color: #1f2f86;
+				font-weight: 800;
+				margin-bottom: 6px;
+			}
+
+			.disclaimer{
+				font-size: 14px;
+				color: #776157;
+				font-style: italic;
+			}
+
+			footer{
+				background: #1f2f86;
+				padding: 35px 0;
+				margin-top: 60px;
+				border-top: 4px solid #16225f;
+			}
+
+			.footerbox{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+				padding: 0 20px;
+			}
+
+			.footerlinks a{
+				color: white;
+				margin-right: 14px;
+			}
+
+			.socialbox{
+				display: flex;
+				gap: 10px;
+			}
+
+			.socialbox a{
+				width: 46px;
+				height: 46px;
+				background: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #d9d9d9;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<div class="brand">
+				<img src="images/kingconelogo.png" alt="King Cone Logo Image">
+				<h1>King Cone</h1>
+			</div>
+
+			<nav>
+				<a href="home.html" class="active">Home</a>
+				<a href="about.html">About</a>
+				<a href="services.html">Services</a>
+				<a href="regularflavors.html">Regular Flavors</a>
+				<a href="seasonalflavors.html">Seasonal Flavors</a>
+				<a href="promotions.html">Promotions</a>
+				<a href="eventsweddingpricing.html">Events / Wedding Pricing</a>
+				<a href="contactus.html">Contact Us</a>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<div class="page">
+
+				<section class="mainsection">
+
+					<div class="mainbox">
+
+						<div class="maintext">
+							<h2>Welcome to King Cone</h2>
+							<p>
+								Experience the finest award-winning homemade ice cream in Central Wisconsin! Nestled in Plover, WI, we take pride in crafting rich, velvety flavors using high-quality local dairy and precision craftsmanship.
+							</p>
+							<div class="buttonrow">
+								<a href="regularflavors.html" class="button">View Our Menu</a>
+							</div>
+						</div>
+
+						<div class="mainpic">
+							<img src="images/kingconeshopfront.jpeg" alt="Welcome to King Cone Ice Cream">
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="contactbox">
+
+					<div class="contactrow">
+
+						<div class="leftside">
+							<div class="box">
+								<h3>Fresh Ingredients & Decades of Passion</h3>
+								<p>From our premium vanilla and rich cocoa powder bases to our inventive inclusions, every single batch tells a story of dedication to excellence. We offer an impressive daily variety of hard-serve ice cream flavors alongside premium sundaes, malts, flurries, shakes, and crisp homemade waffle cones crafted to brighten your day.</p>
+							</div>
+						</div>
+
+						<div class="rightside">
+							<div class="box">
+								<h3>Dedicated to Dietary Inclusivity</h3>
+								<p>Everyone deserves a delicious scoop! Our daily operations feature an array of carefully handled dairy-free choices, as well as exceptionally refreshing gluten-friendly alternatives in our popular Jester Paletas category—ensuring an unforgettable, safe dessert adventure for every guest.</p>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<h2 class="showcase-heading">Fresh Specials Showcase</h2>
+
+				<div class="showcase-grid">
+
+					<div class="picturebox">
+						<img src="images/icecreamcones.jpeg" alt="King Cone Favorites and Specials Display">
+						<h3>Favorites & Specials</h3>
+						<p class="disclaimer">*while supplies last</p>
+					</div>
+
+					<div class="picturebox">
+						<img src="images/kingconeshop.webp" alt="Visit Our Location">
+						<h3>Hand-Crafted Daily</h3>
+						<p class="disclaimer">Made fresh in Plover, WI</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer>
+
+			<div class="footerbox">
+
+				<div class="footerlinks">
+					<a href="#">Terms of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Cookie Settings</a>
+					<a href="#">Your Privacy Choices</a>
+					<a href="#">Web Accessibility</a>
+					<a href="#">Copyright. King Cone, LLC. 2020</a>
+					<a href="#">Created & Designed by Tasya Nambiar</a>
+				</div>
+
+				<div class="socialbox">
+					<a href="#"><img src="images/instagram.png" alt="Instagram" width="25px" height="25px"></a>
+					<a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+					<a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

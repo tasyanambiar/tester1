@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title> King Cone Seasonal Flavors </title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="Explore King Cone's seasonal calendar of rotating handcrafted ice cream flavors from our February opening through our autumn selections!">
+		<meta name="keywords" content="King Cone, Seasonal Flavors, Monthly Ice Cream Menu, Holiday Specials, Homemade Sweets, Plover Wisconsin">
+		<meta name="author" content="King Cone">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+		<style>
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+
+			body{
+				font-family: 'Nunito', sans-serif;
+				background: #fff8f1;
+				color: #35221b;
+			}
+
+
+			img{
+				max-width: 100%;
+				display: block;
+			}
+
+
+			a{
+				text-decoration: none;
+			}
+
+
+			header{
+				background: #15307d;
+				border-bottom: 3px solid #0f1d52;
+			}
+
+
+			.logo-area{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 18px;
+				padding: 20px;
+				border-bottom: 2px solid rgba(255,255,255,0.15);
+			}
+
+
+			.logo-area img{
+				width: 65px;
+			}
+
+
+			.logo-area h1{
+				font-family: 'Kavoon', sans-serif;
+				font-size: 52px;
+				color: white;
+			}
+
+
+			nav{
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				padding: 12px 20px;
+				background: #1f2f86;
+				border-top: 1px solid rgba(255,255,255,0.10);
+			}
+
+
+			nav a{
+				color: white;
+				padding: 10px 14px;
+				border-radius: 10px;
+				font-weight: 700;
+			}
+
+
+			nav a:hover{
+				background: rgba(255,255,255,0.15);
+			}
+
+
+			.active{
+				background: #e43a3a;
+			}
+
+
+			main{
+				padding: 50px 0 80px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+
+			.mainsection, .contentbox{
+				border-radius: 20px;
+				border: 2px solid #ead2b7;
+			}
+
+
+			.mainsection{
+				background: #fff1e4;
+				padding: 40px;
+				margin-bottom: 50px;
+			}
+
+
+			.mainbox{
+				display: flex;
+				gap: 40px;
+				align-items: center;
+			}
+
+
+			.maintext{
+				width: 60%;
+			}
+
+
+			.mainpic{
+				width: 40%;
+			}
+
+
+			.maintext h2{
+				font-family: 'Pacifico', cursive;
+				font-size: 48px;
+				color: #5b2a00;
+				margin-bottom: 20px;
+			}
+
+
+			.maintext p, .contentbox p{
+				line-height: 1.8;
+				font-size: 18px;
+			}
+
+
+			.buttonrow{
+				margin-top: 25px;
+				display: flex;
+				gap: 12px;
+			}
+
+
+			.buttonrow a.button{
+				display: inline-block;
+				padding: 14px 24px;
+				border-radius: 12px;
+				font-weight: 800;
+				color: white;
+			}
+
+
+			.buttonblue{
+				background: #1f2f86;
+				border-color: #16225f;
+			}
+
+
+			.mainpic img{
+				border-radius: 18px;
+				border: 2px solid #d9c2a8;
+				height: 340px;
+				object-fit: cover;
+			}
+
+
+			.contentbox{
+				background: white;
+				padding: 50px 40px;
+				margin-bottom: 45px;
+				text-align: center;
+			}
+
+
+			.contentbox h3{
+				font-size: 34px;
+				margin-bottom: 30px;
+				color: #1f2f86;
+				text-align: center;
+				font-weight: 800;
+				letter-spacing: 0.5px;
+			}
+
+
+			.flavor-row {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 30px;
+			}
+
+
+			.flavor-item {
+				background: #fff8f2;
+				border: 2px solid #ead2b7;
+				border-radius: 18px;
+				padding: 20px;
+				text-align: center;
+				min-width: 220px;
+				max-width: 260px;
+				box-shadow: 0 4px 10px rgba(53, 34, 27, 0.03);
+			}
+
+
+			.flavor-item img {
+				width: 100%;
+				height: 190px;
+				object-fit: cover;
+				border-radius: 12px;
+				border: 1px solid #f0e2d3;
+				margin-bottom: 16px;
+			}
+
+
+			.flavor-item h4 {
+				font-size: 17px;
+				font-weight: 800;
+				color: #35221b;
+				line-height: 1.4;
+			}
+
+
+			footer{
+				background: #1f2f86;
+				padding: 35px 0;
+				margin-top: 60px;
+				border-top: 3px solid #16225f;
+			}
+
+
+			.footerbox{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 30px;
+				padding: 0 20px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+
+			.footerlinks a{
+				color: white;
+				margin-right: 16px;
+				display: inline-block;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+
+
+			.socialbox{
+				display: flex;
+				gap: 12px;
+			}
+
+
+			.socialbox a{
+				width: 46px;
+				height: 46px;
+				background: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #d9d9d9;
+			}
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<header>
+
+			<div class="logo-area">
+				<img src="images/kingconelogo.png" alt="King Cone Logo Image">
+				<h1>King Cone</h1>
+			</div>
+
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="services.html">Services</a>
+				<a href="regularflavors.html">Regular Flavors</a>
+				<a href="seasonalflavors.html" class="active">Seasonal Flavors</a>
+				<a href="promotions.html">Promotions</a>
+				<a href="eventsweddingpricing.html">Events / Wedding Pricing</a>
+				<a href="contactus.html">Contact Us</a>
+			</nav>
+
+		</header>
+
+
+		<main>
+
+			<div class="page">
+
+				<section class="mainsection">
+
+					<div class="mainbox">
+
+						<div class="maintext">
+
+							<h2>Seasonal Flavors</h2>
+
+							<p>
+								At King Cone, we embrace the changing seasons with a rolling lineup of limited-run batches! Explore our operational calendar below to see exactly which fresh fruit mixers, cozy spices, and festive holiday flavors take over our dipping cabinets during each rotation.
+							</p>
+
+							<div class="buttonrow">
+								<a href="regularflavors.html" class="button buttonblue">View Regular Flavors</a>
+							</div>
+
+						</div>
+
+						<div class="mainpic">
+							<img src="images/icecreamcones.jpeg" alt="Assorted Seasonal Monthly Flavors Cones">
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="contentbox">
+
+					<h3>February</h3>
+
+					<div class="flavor-row">
+
+						<div class="flavor-item">
+							<img src="images/febflavor.jpg" alt="Sweetheart Strawberry">
+							<h4>Sweetheart Strawberry</h4>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="contentbox">
+
+					<h3>March</h3>
+
+					<div class="flavor-row">
+
+						<div class="flavor-item">
+							<img src="images/marchflavor1.jpg" alt="Irish Cream Swirl">
+							<h4>Irish Cream Swirl</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/marchflavor2.jpg" alt="Mint Mania Special">
+							<h4>Mint Mania Special</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/marchflavor3.jpg" alt="Shamrock Crystal">
+							<h4>Shamrock Crystal</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/marchflavor4.jpg" alt="Pot of Gold Caramel">
+							<h4>Pot of Gold Caramel</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/marchflavor5.jpg" alt="Pot of Gold Caramel">
+							<h4>Pot of Gold Caramel</h4>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="contentbox">
+
+					<h3>April</h3>
+
+					<div class="flavor-row">
+
+						<div class="flavor-item">
+							<img src="images/aprilflavor1.jpg" alt="Jelly Bean Vanilla">
+							<h4>Jelly Bean Vanilla</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/aprilflavor2.jpg" alt="Marshmallow Peep Delight">
+							<h4>Marshmallow Peep Delight</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/aprilflavor3.jpg" alt="Lemon Spring Chiffon">
+							<h4>Lemon Spring Chiffon</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/aprilflavor4.jpg" alt="Malted Pastel Egg">
+							<h4>Malted Pastel Egg</h4>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="contentbox">
+
+					<h3>May</h3>
+
+					<div class="flavor-row">
+
+						<div class="flavor-item">
+							<img src="images/mayflavor1.jpg" alt="Cinco de Mango Paleta">
+							<h4>Cinco de Mango Paleta</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/mayflavor2.jpg" alt="Mother's Velvet Ribbon">
+							<h4>Mother's Velvet Ribbon</h4>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="contentbox">
+
+					<h3>June</h3>
+
+					<div class="flavor-row">
+
+						<div class="flavor-item">
+							<img src="images/juneflavor1.jpg" alt="Door County Cherry">
+							<h4>Door County Cherry</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/juneflavor2.jpg" alt="Balmy Strawberry">
+							<h4>Balmy Strawberry</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/juneflavor3.jpg" alt="Wild Blueberry Swirl">
+							<h4>Wild Blueberry Swirl</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/juneflavor4.jpg" alt="Raspberry Cream Dream">
+							<h4>Raspberry Cream Dream</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/juneflavor5.jpg" alt="Raspberry Cream Dream">
+							<h4>Raspberry Cream Dream</h4>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="contentbox">
+
+					<h3>July</h3>
+
+					<div class="flavor-row">
+
+						<div class="flavor-item">
+							<img src="images/julyflavor1.jpg" alt="Christmas in July Fudge">
+							<h4>Christmas in July Fudge</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/julyflavor2.jpg" alt="Fresh Summer Peach">
+							<h4>Fresh Summer Peach</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/julyflavor3.jpg" alt="Patriot Rocket Pop">
+							<h4>Patriot Rocket Pop</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/julyflavor4.jpg" alt="Toasted Marshmallow">
+							<h4>Toasted Marshmallow</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/julyflavor5.jpg" alt="Toasted Marshmallow">
+							<h4>Toasted Marshmallow</h4>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="contentbox">
+
+					<h3>End of July / Beginning of August</h3>
+
+					<div class="flavor-row">
+
+						<div class="flavor-item">
+							<img src="images/endofjuly1.jpg" alt="Fairgrounds Cotton Whirl">
+							<h4>Fairgrounds Cotton Whirl</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/endofjuly2.jpg" alt="Toasted S'mores">
+							<h4>Toasted S'mores</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/endofjuly3.jpg" alt="Wild Blackberry Honey">
+							<h4>Wild Blackberry Honey</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/endofjuly4.jpg" alt="Island Banana Split">
+							<h4>Island Banana Split</h4>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="contentbox">
+
+					<h3>August / September</h3>
+
+					<div class="flavor-row">
+
+						<div class="flavor-item">
+							<img src="images/augustseptember1.jpg" alt="Pumpkin Pie Pecan">
+							<h4>Pumpkin Pie Pecan</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/augustseptember2.jpg" alt="Apple Cider Crisp">
+							<h4>Apple Cider Crisp</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/augustseptember3.jpg" alt="Caramel Apple Deluxe">
+							<h4>Caramel Apple Deluxe</h4>
+						</div>
+
+						<div class="flavor-item">
+							<img src="images/augustseptember4.jpg" alt="Monster Mash Cookie">
+							<h4>Monster Mash Cookie</h4>
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+
+		</main>
+
+
+		<footer>
+
+			<div class="footerbox">
+
+				<div class="footerlinks">
+					<a href="#">Terms of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Cookie Settings</a>
+					<a href="#">Your Privacy Choices</a>
+					<a href="#">Web Accessibility</a>
+					<a href="#">Copyright. King Cone, LLC. 2020</a>
+					<a href="#">Created & Designed by Tasya Nambiar</a>
+				</div>
+
+				<div class="socialbox">
+					<a href="#"><img src="images/instagram.png" alt="Instagram" width="25px" height="25px"></a>
+					<a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+					<a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

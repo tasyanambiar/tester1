@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title> King Cone Ice Cream Services </title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="Ice cream catering, food truck, flavors, and the homemade ice cream process by King Cone">
+		<meta name="keywords" content="King Cone, Services, Ice Cream Truck, Catering, Flavors, Homemade Ice Cream Process, Plover Wisconsin">
+		<meta name="author" content="King Cone">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+		<style>
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body{
+				font-family: 'Nunito', sans-serif;
+				background: #fff8f1;
+				color: #35221b;
+			}
+
+			img{
+				max-width: 100%;
+				display: block;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			header{
+				background: #15307d;
+				border-bottom: 3px solid #0f1d52;
+			}
+
+			.brand{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 18px;
+				padding: 20px;
+				border-bottom: 2px solid rgba(255,255,255,0.15);
+			}
+
+			.brand img{
+				width: 65px;
+			}
+
+			.brand h1{
+				font-family: 'Kavoon', sans-serif;
+				font-size: 52px;
+				color: white;
+			}
+
+			nav{
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				padding: 12px 20px;
+				background: #1f2f86;
+				border-top: 1px solid rgba(255,255,255,0.10);
+			}
+
+			nav a{
+				color: white;
+				padding: 10px 14px;
+				border-radius: 10px;
+				font-weight: 700;
+			}
+
+			nav a:hover{
+				background: rgba(255,255,255,0.15);
+			}
+
+			.active{
+				background: #e43a3a;
+			}
+
+			main{
+				padding: 40px 0 60px;
+			}
+
+			.mainsection, .contactbox, .box, .picturebox{
+				border-radius: 20px;
+				border: 2px solid #ead2b7;
+			}
+
+			.mainsection{
+				background: #fff1e4;
+				padding: 30px;
+				margin-bottom: 25px;
+			}
+
+			.mainbox, .contactrow{
+				display: flex;
+				gap: 25px;
+			}
+
+			.maintext, .leftside{
+				width: 60%;
+			}
+
+			.mainpic, .rightside{
+				width: 40%;
+			}
+
+			.maintext h2{
+				font-family: 'Pacifico', cursive;
+				font-size: 48px;
+				color: #5b2a00;
+				margin-bottom: 12px;
+			}
+
+			.maintext p, .box p, .picturebox p{
+				line-height: 1.8;
+				font-size: 18px;
+			}
+
+			.maintext a, .box a{
+				color: #b51f1f;
+				font-weight: 800;
+			}
+
+			.buttonrow{
+				margin-top: 20px;
+				display: flex;
+				gap: 12px;
+			}
+
+			.maintext .button{
+				display: inline-block;
+				padding: 14px 22px;
+				border-radius: 12px;
+				font-weight: 800;
+				color: white;
+			}
+
+			.buttonblue{
+				background: #1f2f86;
+				border-color: #16225f;
+			}
+
+			.mainpic img, .picturebox img{
+				border-radius: 18px;
+				border: 2px solid #d9c2a8;
+			}
+
+			.mainpic img{
+				height: 320px;
+				object-fit: cover;
+			}
+
+			.contactbox{
+				background: white;
+				padding: 30px;
+			}
+
+			.rightside{
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.box, .picturebox{
+				background: #fff4e8;
+				padding: 24px;
+			}
+
+			.box{
+				margin-bottom: 20px;
+			}
+
+			.box h3, .picturebox h3{
+				font-size: 24px;
+				margin-bottom: 12px;
+				color: #1f2f86;
+			}
+
+			footer{
+				background: #1f2f86;
+				padding: 25px 0;
+				margin-top: 25px;
+				border-top: 3px solid #16225f;
+			}
+
+			.footerbox{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+				padding: 0 20px;
+			}
+
+			.footerlinks a{
+				color: white;
+				margin-right: 14px;
+			}
+
+			.socialbox{
+				display: flex;
+				gap: 10px;
+			}
+
+			.socialbox a{
+				width: 46px;
+				height: 46px;
+				background: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #d9d9d9;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<div class="brand">
+				<img src="images/kingconelogo.png" alt="King Cone Logo Image">
+				<h1>King Cone</h1>
+			</div>
+
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="services.html" class="active">Services</a>
+				<a href="regularflavors.html">Regular Flavors</a>
+				<a href="seasonalflavors.html">Seasonal Flavors</a>
+				<a href="promotions.html">Promotions</a>
+				<a href="eventsweddingpricing.html">Events / Wedding Pricing</a>
+				<a href="contactus.html">Contact Us</a>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<div class="page">
+
+				<section class="mainsection">
+
+					<div class="mainbox">
+
+						<div class="maintext">
+
+							<h2>Our Services</h2>
+
+							<p>
+								Experience the magic of King Cone Home Made Ice Cream! From bringing our vibrant dessert food truck right to your milestone celebration, to crafting over 40 flavors daily, we are dedicated to excellence in every single scoop.
+							</p>
+
+							<div class="buttonrow">
+								<a href="contactus.html" class="button buttonblue">Book an Event</a>
+							</div>
+
+						</div>
+
+						<div class="mainpic">
+							<img src="images/kingconeshopfront.jpeg" alt="King Cone services showcase">
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="contactbox">
+
+					<div class="contactrow">
+
+						<div class="leftside">
+
+							<div class="box">
+								<h3>Ice Cream Truck & Catering</h3>
+								<p>Indulge in the sweet delights of King Cone beyond the walls of our beloved ice cream shop through our vibrant ice cream truck and catering services. Our dessert food truck brings the joy of King Cone to various locations and events, offering a mobile experience that delights both young and old. Whether it's a family reunion, corporate event, or a wedding celebration, our professional and friendly staff ensure that your guests savor the magic of our homemade ice cream creations. Trust King Cone's ice cream truck and catering services to elevate your event.</p>
+							</div>
+
+							<div class="box">
+								<h3>Flavors & Specials</h3>
+								<p>King Cone stands proud with its renowned selection of over 40 mouthwatering ice cream flavors available daily, ensuring there's a tempting choice for every palate. Our inventive creations (available seasonally) such as Balmy Strawberry or Door County Cherry Cheesecake promise a delightful journey for your taste buds. Embracing the changing seasons, we introduce special flavors that add an element of surprise to every visit. Our commitment to inclusivity shines through with a range of dairy-free options, as well as gluten-friendly choices in our Jester Paletas section.</p>
+							</div>
+
+							<div class="box">
+								<h3>Homemade Ice Cream Process</h3>
+								<p>Crafting our homemade ice cream at King Cone is a meticulous process rooted in quality and passion. We start with carefully selected high-quality ingredients, blending fresh dairy, premium cocoa, and real vanilla to create a velvety-smooth base for our diverse array of flavors. From churning to packaging, each step is executed with precision to deliver consistently delightful ice cream. Experience the result of decades of craftsmanship at King Cone in Plover, WI, where each scoop tells a story of dedication to excellence.</p>
+							</div>
+
+						</div>
+
+						<div class="rightside">
+
+							<div class="picturebox">
+								<img src="images/icecreamtruck.png" alt="King Cone Ice Cream Truck Setup" height="300px" width="700px">
+								<h3>Truck & Catering</h3>
+							</div>
+
+							<div class="picturebox">
+								<img src="images/flavorspecials.png" alt="Over 40 Ice Cream Flavors Daily" height="300px" width="700px">
+								<h3>40+ Daily Flavors</h3>
+							</div>
+
+							<div class="picturebox">
+								<img src="images/homemadeicecream.png" alt="Decades of Ice Cream Craftsmanship" height="300px" width="700px">
+								<h3>Our Passionate Process</h3>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer>
+
+			<div class="footerbox">
+
+				<div class="footerlinks">
+					<a href="#">Terms of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Cookie Settings</a>
+					<a href="#">Your Privacy Choices</a>
+					<a href="#">Web Accessibility</a>
+					<a href="#">Copyright. King Cone, LLC. 2020</a>
+					<a href="#">Created & Designed by Tasya Nambiar</a>
+				</div>
+
+				<div class="socialbox">
+					<a href="#"><img src="images/instagram.png" alt="Instagram" width="25px" height="25px"></a>
+					<a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+					<a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

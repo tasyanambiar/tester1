@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title> King Cone Regular Flavors </title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="Explore King Cone's legendary daily selection of 47 mouthwatering homemade ice cream flavors, including award-winning classics and premium dairy treats.">
+		<meta name="keywords" content="King Cone, Regular Flavors, Homemade Ice Cream Menu, Best Ice Cream Flavors, Plover Wisconsin">
+		<meta name="author" content="King Cone">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+		<style>
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body{
+				font-family: 'Nunito', sans-serif;
+				background: #fff8f1;
+				color: #35221b;
+			}
+
+			img{
+				max-width: 100%;
+				display: block;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			header{
+				background: #15307d;
+				border-bottom: 3px solid #0f1d52;
+			}
+
+			.brand{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 18px;
+				padding: 20px;
+				border-bottom: 2px solid rgba(255,255,255,0.15);
+			}
+
+			.brand img{
+				width: 65px;
+			}
+
+			.brand h1{
+				font-family: 'Kavoon', sans-serif;
+				font-size: 52px;
+				color: white;
+			}
+
+			nav{
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				padding: 12px 20px;
+				background: #1f2f86;
+				border-top: 1px solid rgba(255,255,255,0.10);
+			}
+
+			nav a{
+				color: white;
+				padding: 10px 14px;
+				border-radius: 10px;
+				font-weight: 700;
+			}
+
+			nav a:hover{
+				background: rgba(255,255,255,0.15);
+			}
+
+			.active{
+				background: #e43a3a;
+			}
+
+			main{
+				padding: 40px 0 60px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.mainsection, .contentbox{
+				border-radius: 20px;
+				border: 2px solid #ead2b7;
+			}
+
+			.mainsection{
+				background: #fff1e4;
+				padding: 30px;
+				margin-bottom: 25px;
+			}
+
+			.mainbox{
+				display: flex;
+				gap: 25px;
+				align-items: center;
+			}
+
+			.maintext{
+				width: 60%;
+			}
+
+			.mainpic{
+				width: 40%;
+			}
+
+			.maintext h2{
+				font-family: 'Pacifico', cursive;
+				font-size: 48px;
+				color: #5b2a00;
+				margin-bottom: 12px;
+			}
+
+			.maintext p, .contentbox p{
+				line-height: 1.8;
+				font-size: 18px;
+			}
+
+			.buttonrow{
+				margin-top: 20px;
+				display: flex;
+				gap: 12px;
+			}
+
+			.maintext .button{
+				display: inline-block;
+				padding: 14px 22px;
+				border-radius: 12px;
+				font-weight: 800;
+				color: white;
+
+
+			}
+
+			.buttonblue{
+				background: #1f2f86;
+				border-color: #16225f;
+			}
+
+			.mainpic img{
+				border-radius: 18px;
+				border: 2px solid #d9c2a8;
+				height: 320px;
+				object-fit: cover;
+			}
+
+			.contentbox{
+				background: white;
+				padding: 40px;
+			}
+
+			.contentbox h3{
+				font-size: 28px;
+				margin-bottom: 12px;
+				color: #1f2f86;
+				text-align: center;
+			}
+
+			.contentbox .intro-text {
+				text-align: center;
+				margin-bottom: 30px;
+				color: #554138;
+			}
+
+			table {
+				width: 100%;
+				border-spacing: 16px;
+			}
+
+			table td {
+				background: #fff8f2;
+				border: 2px solid #ead2b7;
+				border-radius: 18px;
+				padding: 15px;
+				text-align: center;
+				width: 25%;
+				vertical-align: top;
+			}
+
+			table td img {
+				width: 100%;
+				height: 180px;
+				object-fit: cover;
+				border-radius: 12px;
+				border: 1px solid #f0e2d3;
+				margin-bottom: 12px;
+			}
+
+			table td h4 {
+				font-size: 16px;
+				font-weight: 800;
+				color: #35221b;
+				line-height: 1.4;
+			}
+
+			footer{
+				background: #1f2f86;
+				padding: 25px 0;
+				margin-top: 40px;
+				border-top: 3px solid #16225f;
+			}
+
+			.footerbox{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+				padding: 0 20px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.footerlinks a{
+				color: white;
+				margin-right: 14px;
+			}
+
+			.socialbox{
+				display: flex;
+				gap: 10px;
+			}
+
+			.socialbox a{
+				width: 46px;
+				height: 46px;
+				background: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #d9d9d9;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<div class="brand">
+				<img src="images/kingconelogo.png" alt="King Cone Logo Image">
+				<h1>King Cone</h1>
+			</div>
+
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="services.html">Services</a>
+				<a href="regularflavors.html" class="active">Regular Flavors</a>
+				<a href="seasonalflavors.html">Seasonal Flavors</a>
+				<a href="promotions.html">Promotions</a>
+				<a href="eventsweddingpricing.html">Events / Wedding Pricing</a>
+				<a href="contactus.html">Contact Us</a>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<div class="page">
+
+				<section class="mainsection">
+
+					<div class="mainbox">
+
+						<div class="maintext">
+
+							<h2>Regular Flavors</h2>
+
+							<p>
+								King Cone stands proud with its renowned selection of 47 mouthwatering ice cream flavors available daily, ensuring there's a tempting choice for every palate. Crafted meticulously with passion and precision, each scoop offers a velvety-smooth journey for your taste buds.
+							</p>
+
+							<div class="buttonrow">
+								<a href="seasonalflavors.html" class="button buttonblue">View Seasonal Flavors</a>
+							</div>
+
+						</div>
+
+						<div class="mainpic">
+							<img src="images/icecreamcones.jpeg" alt="Assorted Daily Regular Flavors Display Cones">
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="contentbox">
+
+					<h3>Our Handcrafted Daily Selection (47 Flavors)</h3>
+					<p class="intro-text">Browse through our extensive lineup of award-winning classics, rich chocolates, specialty confections, and fruity recipes made fresh daily right here in Plover.</p>
+					
+					<table>
+						
+						<tr>
+							<td>
+								<img src="images/flavor1.jpg" alt="Simply Vanilla">
+								<h4>Simply Vanilla</h4>
+							</td>
+							<td>
+								<img src="images/flavor2.jpg" alt="Chocolate Trance">
+								<h4>Chocolate Trance</h4>
+							</td>
+							<td>
+								<img src="images/flavor3.jpg" alt="Salty Caramel Truffle">
+								<h4>Salty Caramel Truffle</h4>
+							</td>
+							<td>
+								<img src="images/flavor4.jpg" alt="Butter Pecan Kruncher">
+								<h4>Butter Pecan Kruncher</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor5.jpg" alt="Zanzee Chocolate Bar">
+								<h4>Zanzee Chocolate Bar</h4>
+							</td>
+							<td>
+								<img src="images/flavor6.jpg" alt="Caramel Apple Sucker">
+								<h4>Caramel Apple Sucker</h4>
+							</td>
+							<td>
+								<img src="images/flavor7.jpg" alt="Rocky Road">
+								<h4>Rocky (& Bullwinkle) Road</h4>
+							</td>
+							<td>
+								<img src="images/flavor8.jpg" alt="Strawberry Fields">
+								<h4>Strawberry Fields</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor9.jpg" alt="Mint Chocolate Chip">
+								<h4>Mint Chocolate Chip</h4>
+							</td>
+							<td>
+								<img src="images/flavor10.jpg" alt="Cookies 'N' Cream">
+								<h4>Cookies 'N' Cream</h4>
+							</td>
+							<td>
+								<img src="images/flavor11.jpg" alt="Cookie Dough">
+								<h4>Cookie Dough</h4>
+							</td>
+							<td>
+								<img src="images/flavor12.jpg" alt="Peanut Butter Cup">
+								<h4>Peanut Butter Cup</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor13.jpg" alt="Maggie's Moo Cake">
+								<h4>Maggie's Moo Cake</h4>
+							</td>
+							<td>
+								<img src="images/flavor14.jpg" alt="Blueberry Cake">
+								<h4>Blueberry 'Yes Please' Cake</h4>
+							</td>
+							<td>
+								<img src="images/flavor15.jpg" alt="Red Velvet">
+								<h4>Red Velvet</h4>
+							</td>
+							<td>
+								<img src="images/flavor16.jpg" alt="Cake Batter">
+								<h4>Cake Batter</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor17.jpg" alt="Cotton Candy">
+								<h4>Cotton Candy</h4>
+							</td>
+							<td>
+								<img src="images/flavor18.jpg" alt="Bubble Gum">
+								<h4>Bubble Gum</h4>
+							</td>
+							<td>
+								<img src="images/flavor19.jpg" alt="Coffee Bean">
+								<h4>Coffee Bean</h4>
+							</td>
+							<td>
+								<img src="images/flavor20.jpg" alt="Toffee Crunch">
+								<h4>Toffee Crunch</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor21.jpg" alt="Maple Walnut">
+								<h4>Maple Walnut</h4>
+							</td>
+							<td>
+								<img src="images/flavor22.jpg" alt="Pistachio Almond">
+								<h4>Pistachio Almond</h4>
+							</td>
+							<td>
+								<img src="images/flavor23.jpg" alt="Black Cherry">
+								<h4>Black Cherry</h4>
+							</td>
+							<td>
+								<img src="images/flavor24.jpg" alt="Banana Split">
+								<h4>Banana Split Flavor</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor25.jpg" alt="Coconut Almond">
+								<h4>Coconut Almond Bliss</h4>
+							</td>
+							<td>
+								<img src="images/flavor26.jpg" alt="Praline Pecan">
+								<h4>Praline Pecan Swirl</h4>
+							</td>
+							<td>
+								<img src="images/flavor27.jpg" alt="Fudge Brownie">
+								<h4>Fudge Brownie</h4>
+							</td>
+							<td>
+								<img src="images/flavor28.jpg" alt="Caramel Swirl">
+								<h4>Caramel Swirl</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor29.jpg" alt="Lemon Pie">
+								<h4>Lemon Pie</h4>
+							</td>
+							<td>
+								<img src="images/flavor30.jpg" alt="Raspberry Lemonade">
+								<h4>Raspberry Lemonade</h4>
+							</td>
+							<td>
+								<img src="images/flavor31.jpg" alt="Orange Sherbet">
+								<h4>Orange Sherbet</h4>
+							</td>
+							<td>
+								<img src="images/flavor32.jpg" alt="Rainbow Sherbet">
+								<h4>Rainbow Sherbet</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor33.jpg" alt="Raspberry Sorbet">
+								<h4>Raspberry Sorbet</h4>
+							</td>
+							<td>
+								<img src="images/flavor34.jpg" alt="Mango Paleta">
+								<h4>Mango Paleta</h4>
+							</td>
+							<td>
+								<img src="images/flavor35.jpg" alt="Strawberry Paleta">
+								<h4>Strawberry Paleta</h4>
+							</td>
+							<td>
+								<img src="images/flavor36.jpg" alt="Key Lime Pie">
+								<h4>Key Lime Pie</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor37.jpg" alt="Rum Raisin">
+								<h4>Rum Raisin</h4>
+							</td>
+							<td>
+								<img src="images/flavor38.jpg" alt="Dark Chocolate">
+								<h4>Dark Chocolate</h4>
+							</td>
+							<td>
+								<img src="images/flavor39.jpg" alt="Sno-Cone Blue">
+								<h4>Sno-Cone Blue</h4>
+							</td>
+							<td>
+								<img src="images/flavor40.jpg" alt="Birthday Cake">
+								<h4>Birthday Cake</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor41.jpg" alt="S'mores Campfire">
+								<h4>S'mores Campfire</h4>
+							</td>
+							<td>
+								<img src="images/flavor42.jpg" alt="Monster Cookie">
+								<h4>Monster Cookie</h4>
+							</td>
+							<td>
+								<img src="images/flavor43.jpg" alt="Chocolate Malt Ball">
+								<h4>Chocolate Malt Ball</h4>
+							</td>
+							<td>
+								<img src="images/flavor44.jpg" alt="Peach Cobbler">
+								<h4>Peach Cobbler</h4>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<img src="images/flavor45.jpg" alt="Cherry Amaretto">
+								<h4>Cherry Amaretto</h4>
+							</td>
+							<td>
+								<img src="images/flavor46.jpg" alt="Salted Pretzel">
+								<h4>Salted Pretzel Crunch</h4>
+							</td>
+							<td>
+								<img src="images/flavor47.jpg" alt="Vanilla Bean">
+								<h4>Vanilla Bean Custom</h4>
+							</td>
+						</tr>
+
+					</table>
+
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer>
+
+			<div class="footerbox">
+
+				<div class="footerlinks">
+					<a href="#">Terms of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Cookie Settings</a>
+					<a href="#">Your Privacy Choices</a>
+					<a href="#">Web Accessibility</a>
+					<a href="#">Copyright. King Cone, LLC. 2020</a>
+					<a href="#">Created & Designed by Tasya Nambiar</a>
+				</div>
+
+				<div class="socialbox">
+					<a href="#"><img src="images/instagram.png" alt="Instagram" width="25px" height="25px"></a>
+					<a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+					<a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

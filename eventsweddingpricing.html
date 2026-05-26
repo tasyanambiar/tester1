@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title> King Cone Events & Wedding Pricing </title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="Events and Wedding Ice Cream Catering by King Cone">
+		<meta name="keywords" content="King Cone, Events, Wedding, Catering, Ice Cream, Plover Wisconsin">
+		<meta name="author" content="King Cone">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+		<style>
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body{
+				font-family: 'Nunito', sans-serif;
+				background: #fff8f1;
+				color: #35221b;
+			}
+
+			img{
+				max-width: 100%;
+				display: block;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			header{
+				background: #15307d;
+				border-bottom: 3px solid #0f1d52;
+			}
+
+			.brand{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 18px;
+				padding: 20px;
+				border-bottom: 2px solid rgba(255,255,255,0.15);
+			}
+
+			.brand img{
+				width: 65px;
+			}
+
+			.brand h1{
+				font-family: 'Kavoon', sans-serif;
+				font-size: 52px;
+				color: white;
+			}
+
+			nav{
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				padding: 12px 20px;
+				background: #1f2f86;
+				border-top: 1px solid rgba(255,255,255,0.10);
+			}
+
+			nav a{
+				color: white;
+				padding: 10px 14px;
+				border-radius: 10px;
+				font-weight: 700;
+			}
+
+			nav a:hover{
+				background: rgba(255,255,255,0.15);
+			}
+
+			.active{
+				background: #e43a3a;
+			}
+
+			main{
+				padding: 40px 0 60px;
+			}
+
+			.mainsection, .contactbox, .box, form, .picturebox{
+				border-radius: 20px;
+				border: 2px solid #ead2b7;
+			}
+
+			.mainsection{
+				background: #fff1e4;
+				padding: 30px;
+				margin-bottom: 25px;
+			}
+
+			.mainbox, .contactrow{
+				display: flex;
+				gap: 25px;
+			}
+
+			.maintext, .leftside{
+				width: 60%;
+			}
+
+			.mainpic, .rightside{
+				width: 40%;
+			}
+
+			.maintext h2{
+				font-family: 'Pacifico', cursive;
+				font-size: 48px;
+				color: #5b2a00;
+				margin-bottom: 12px;
+			}
+
+			.maintext p, .box p, .picturebox p, form p{
+				line-height: 1.8;
+				font-size: 18px;
+			}
+
+			.maintext a, .box a{
+				color: #b51f1f;
+				font-weight: 800;
+			}
+
+			.buttonrow{
+				margin-top: 20px;
+				display: flex;
+				gap: 12px;
+			}
+
+			.maintext .button{
+				display: inline-block;
+				padding: 14px 22px;
+				border-radius: 12px;
+				font-weight: 800;
+				color: white !important;
+			}
+
+			.buttonblue{
+				background: #1f2f86;
+				border-color: #16225f;
+			}
+
+			.mainpic img, .picturebox img{
+				border-radius: 18px;
+				border: 2px solid #d9c2a8;
+			}
+
+			.mainpic img{
+				height: 320px;
+				object-fit: cover;
+			}
+
+			.contactbox{
+				background: white;
+				padding: 30px;
+			}
+
+			.rightside{
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.box, form, .picturebox{
+				background: #fff4e8;
+				padding: 24px;
+			}
+
+			.box{
+				margin-bottom: 20px;
+			}
+
+			.box h3, form h3, .picturebox h3{
+				font-size: 24px;
+				margin-bottom: 12px;
+				color: #1f2f86;
+			}
+
+			label{
+				margin: 14px 0 8px;
+				font-weight: 800;
+				display: block;
+			}
+
+			input, textarea, select{
+				width: 100%;
+				padding: 14px;
+				border: 2px solid #e6c6a5;
+				border-radius: 12px;
+				font-family: 'Nunito', sans-serif;
+				font-size: 16px;
+				background: white;
+			}
+
+			textarea{
+				min-height: 170px;
+			}
+
+			.formbuttons{
+				margin-top: 20px;
+				display: flex;
+				gap: 12px;
+			}
+
+			.sendbutton, .resetbutton{
+				border: none;
+				padding: 13px 22px;
+				border-radius: 12px;
+				font-size: 16px;
+				font-weight: 800;
+				cursor: pointer;
+			}
+
+			.sendbutton{
+				background: #e43a3a;
+				color: white;
+				border: 2px solid #c92e2e;
+			}
+
+			.resetbutton{
+				background: #1f2f86;
+				color: white;
+				border: 2px solid #16225f;
+			}
+
+			footer{
+				background: #1f2f86;
+				padding: 25px 0;
+				margin-top: 25px;
+				border-top: 3px solid #16225f;
+			}
+
+			.footerbox{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+				padding: 0 20px;
+			}
+
+			.footerlinks a{
+				color: white;
+				margin-right: 14px;
+			}
+
+			.socialbox{
+				display: flex;
+				gap: 10px;
+			}
+
+			.socialbox a{
+				width: 46px;
+				height: 46px;
+				background: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #d9d9d9;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<div class="brand">
+				<img src="images/kingconelogo.png" alt="King Cone Logo Image">
+				<h1>King Cone</h1>
+			</div>
+
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="services.html">Services</a>
+				<a href="regularflavors.html">Regular Flavors</a>
+				<a href="seasonalflavors.html">Seasonal Flavors</a>
+				<a href="promotions.html">Promotions</a>
+				<a href="eventsweddingpricing.html" class="active">Events / Wedding Pricing</a>
+				<a href="contactus.html">Contact Us</a>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<div class="page">
+
+				<section class="mainsection">
+
+					<div class="mainbox">
+
+						<div class="maintext">
+
+							<h2>Ice Cream Catering</h2>
+
+							<p>
+								Make your next celebration unforgettable with King Cone Home Made Ice Cream! From elegant weddings and graduation parties to corporate celebrations and family reunions, we handle events of any size throughout the Plover area.
+							</p>
+
+							<div class="buttonrow">
+								<a href="contactus.html" class="button buttonblue">Contact Us</a>
+							</div>
+
+						</div>
+
+						<div class="mainpic">
+							<img src="images/kingconewedding3.jpeg" alt="King Cone catering party setup" height="300px" width="700px">
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="contactbox">
+
+					<div class="contactrow">
+
+						<div class="leftside">
+
+							<div class="box">
+								<h3>Important Info</h3>
+								<p><strong>$4.25 per person (100 guaranteed)</strong>
+									<br><br>
+									Example: If you contract for 175 people you will pay $743.75 plus $250 travel and serve time (additional charge if outside radius of the Plover King Cone).
+									<br><br>
+									$250Travel (10 mile radius of the Plover King Cone [additional charge will be determined depending on the distance traveled]), set-up and serve for 75 minutes. Each additional 1/2 hour would be $45.
+									<br><br>
+									15% gratuity will be added to the final total bill.
+									<br><br>
+									The above pricing includes 8 flavors if serving inside venue or 12 flavors if serving outside venue of our award winning ice cream, dishes, spoons and 1 server. You can get less than the quantity
+									mentioned, this is just our standard offering.</p>
+							</div>
+
+							<form>
+								<h3>Inquire About Your Event</h3>
+								<p>Fill out this form to check our calendar availability and get a fast, free pricing quote for your event.</p>
+
+								<label for="fullname">Full Name</label>
+								<input type="text" id="fullname" name="fullname" placeholder="Your full name">
+
+								<label for="email">Email Address</label>
+								<input type="email" id="email" name="email" placeholder="Your email address">
+
+								<label for="eventtype">Type of Event</label>
+								<select id="eventtype" name="eventtype">
+									<option value="">-- Select an option --</option>
+									<option value="wedding">Wedding Reception</option>
+									<option value="graduation">Graduation Party</option>
+									<option value="corporate">Corporate Event</option>
+									<option value="other">Other Special Celebration</option>
+								</select>
+
+								<label for="message">Event Details (Date, Location, Guest Count)</label>
+								<textarea id="message" name="message" placeholder="Please include your preferred date, approximate guest count, and any favorite flavors you would love to have..."></textarea>
+
+								<div class="formbuttons">
+									<input type="submit" value="Submit Request" class="sendbutton">
+									<input type="reset" value="Reset Form" class="resetbutton">
+								</div>
+							</form>
+
+						</div>
+
+						<div class="rightside">
+
+							<div class="picturebox">
+								<img src="images/kingconewedding.jpeg" alt="King Cone wedding ice cream cones" height="300px" width="700px">
+								<h3>Sweet Special Days</h3>
+							</div>
+
+							<div class="picturebox">
+								<img src="images/kingconewedding2.jpeg" alt="King Cone storefront catering transport" height="300px" width="700px">
+								<h3>More Images</h3>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer>
+
+			<div class="footerbox">
+
+				<div class="footerlinks">
+					<a href="#">Terms of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Cookie Settings</a>
+					<a href="#">Your Privacy Choices</a>
+					<a href="#">Web Accessibility</a>
+					<a href="#">Copyright. King Cone, LLC. 2020</a>
+					<a href="#">Created & Designed by Tasya Nambiar</a>
+				</div>
+
+				<div class="socialbox">
+					<a href="#"><img src="images/instagram.png" alt="Instagram" width="25px" height="25px"></a>
+					<a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+					<a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

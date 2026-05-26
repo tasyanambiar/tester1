@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title> King Cone About Us </title>
+
+		<meta charset="utf-8">
+		<meta name="description" content="Welcome to King Cone, your locally and family owned and operated ice cream shop serving Portage County, Waupaca County, and the surrounding areas.">
+		<meta name="keywords" content="King Cone, About Us, History, Award Winning, Ice Cream Shop, Plover Wisconsin">
+		<meta name="author" content="King Cone">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+		<style>
+
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body{
+				font-family: 'Nunito', sans-serif;
+				background: #fff8f1;
+				color: #35221b;
+			}
+
+			img{
+				max-width: 100%;
+				display: block;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			header{
+				background: #15307d;
+				border-bottom: 3px solid #0f1d52;
+			}
+
+			.brand{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 18px;
+				padding: 20px;
+				border-bottom: 2px solid rgba(255,255,255,0.15);
+			}
+
+			.brand img{
+				width: 65px;
+			}
+
+			.brand h1{
+				font-family: 'Kavoon', sans-serif;
+				font-size: 52px;
+				color: white;
+			}
+
+			nav{
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				padding: 12px 20px;
+				background: #1f2f86;
+				border-top: 1px solid rgba(255,255,255,0.10);
+			}
+
+			nav a{
+				color: white;
+				padding: 10px 14px;
+				border-radius: 10px;
+				font-weight: 700;
+			}
+
+			nav a:hover{
+				background: rgba(255,255,255,0.15);
+			}
+
+			.active{
+				background: #e43a3a;
+			}
+
+			main{
+				padding: 40px 0 60px;
+			}
+
+			.mainsection, .contactbox, .box, .picturebox{
+				border-radius: 20px;
+				border: 2px solid #ead2b7;
+			}
+
+			.mainsection{
+				background: #fff1e4;
+				padding: 30px;
+				margin-bottom: 25px;
+			}
+
+			.mainbox, .contactrow{
+				display: flex;
+				gap: 25px;
+			}
+
+			.maintext, .leftside{
+				width: 60%;
+			}
+
+			.mainpic, .rightside{
+				width: 40%;
+			}
+
+			.maintext h2{
+				font-family: 'Pacifico', cursive;
+				font-size: 48px;
+				color: #5b2a00;
+				margin-bottom: 12px;
+			}
+
+			.maintext p, .box p, .picturebox p{
+				line-height: 1.8;
+				font-size: 18px;
+			}
+
+			.buttonrow{
+				margin-top: 20px;
+				display: flex;
+				gap: 12px;
+			}
+
+			.maintext .button{
+				display: inline-block;
+				padding: 14px 22px;
+				border-radius: 12px;
+				font-weight: 800;
+				color: white;
+			}
+
+			.buttonblue{
+				background: #1f2f86;
+				border-color: #16225f;
+			}
+
+			.mainpic img, .picturebox img{
+				border-radius: 18px;
+				border: 2px solid #d9c2a8;
+			}
+
+			.mainpic img{
+				height: 320px;
+				object-fit: cover;
+			}
+
+			.contactbox{
+				background: white;
+				padding: 30px;
+			}
+
+			.rightside{
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.box, .picturebox{
+				background: #fff4e8;
+				padding: 24px;
+			}
+
+			.box{
+				margin-bottom: 20px;
+			}
+
+			.box h3, .picturebox h3{
+				font-size: 24px;
+				margin-bottom: 12px;
+				color: #1f2f86;
+			}
+
+			footer{
+				background: #1f2f86;
+				padding: 25px 0;
+				margin-top: 25px;
+				border-top: 3px solid #16225f;
+			}
+
+			.footerbox{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+				padding: 0 20px;
+			}
+
+			.footerlinks a{
+				color: white;
+				margin-right: 14px;
+			}
+
+			.socialbox{
+				display: flex;
+				gap: 10px;
+			}
+
+			.socialbox a{
+				width: 46px;
+				height: 46px;
+				background: white;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid #d9d9d9;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<div class="brand">
+				<img src="images/kingconelogo.png" alt="King Cone Logo Image">
+				<h1>King Cone</h1>
+			</div>
+
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="about.html" class="active">About</a>
+				<a href="services.html">Services</a>
+				<a href="regularflavors.html">Regular Flavors</a>
+				<a href="seasonalflavors.html">Seasonal Flavors</a>
+				<a href="promotions.html">Promotions</a>
+				<a href="eventsweddingpricing.html">Events / Wedding Pricing</a>
+				<a href="contactus.html">Contact Us</a>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<div class="page">
+
+				<section class="mainsection">
+
+					<div class="mainbox">
+
+						<div class="maintext">
+
+							<h2>ABOUT US</h2>
+
+							<p>
+								Welcome to King Cone, your locally and family owned and operated ice cream shop! We take pride in serving the residents of Portage County, Waupaca County, and the surrounding areas with our delicious homemade ice cream. Our menu is filled with a variety of unique hard-serve ice cream flavors, as well as flurries, homemade waffle cones, slushies, sundaes, malts, shapes, banana splits, and more. Don't miss out on our seasonal flavors that are sure to delight your taste buds. Come and indulge in the sweetest treats at King Cone!
+							</p>
+
+							<div class="buttonrow">
+								<a href="regularflavors.html" class="button buttonblue">View Our Flavors</a>
+							</div>
+
+						</div>
+
+						<div class="mainpic">
+							<img src="images/kingconeshopfront.jpeg" alt="King Cone Storefront Window Welcome">
+						</div>
+
+					</div>
+
+				</section>
+
+				<section class="contactbox">
+
+					<div class="contactrow">
+
+						<div class="leftside">
+
+							<div class="box">
+								<h3>National Ice Cream Retailers Association</h3>
+								<p>
+									We joined the National Ice Cream Retailers Association in order to network with our peers for ideas and flavors. In 2012 we entered our Butter Pecan Kruncher ice cream in the annual contest and took home 1st Place in the Best Nut Flavor category. The category for 2013 was Best Candy Flavor and every year they have the Best New Flavor Category. Again we were fortunate enough to take home 1st Place in the Best Candy category with our Caramel Apple Sucker ice cream. We also took 2nd Place for the Best New Flavor with our Lemon Pie ice cream. In 2014 we took Honorable Mention with our Raspberry Lemonade flavor. This is a national organization, so we go up against ice cream makers from all over the United States.
+								</p>
+							</div>
+
+							<div class="box">
+								<h3>World Dairy Expo Ice Cream Contest</h3>
+								<p>
+									In 2015, we entered the World Dairy Expo Ice Cream Contest held in Madison, WI. Our Zanzee Chocolate Bar ice cream took 2nd Place in the World. In 2016, our Zanzee Chocolate Bar ice cream took 3rd Place in the World. In 2017 our Lemon Pie took 2nd Place in the World. 2018 we achieved our ultimate goal by taking 1st place in the World with our Salty Caramel Truffle. In 2019, Zanzee Chocolate Bar took 3rd Place honors. After the contest was cancelled in 2020 due to COVID we came back in 2021 to take 1st Place with Red Velvet and 2nd Place with Maggie's Moo Cake. In 2022, we placed 2nd Place with Blueberry ‘Yes Please’ Cake. In 2023, we entered our Paletas in the Innovation Category. Our Mango Paleta took 1st Place and our Strawberry Paleta took 3rd Place. Our Caramel Apple Sucker ice cream took 3rd Place in the caramel category. In 2024 our Simply Vanilla and Chocolate Trance ice creams both placed 2nd in the world. Also our Rocky (& Bullwinkle) Road ice cream took 3rd Place. We’re looking forward to what 2025 will bring.
+								</p>
+							</div>
+
+						</div>
+
+						<div class="rightside">
+
+							<div class="picturebox">
+								<img src="images/kingconecelebrate.jpg" alt="Award Winning Recognition Banner" height="300px" width="700px">
+							</div>
+
+							<div class="picturebox">
+								<img src="images/kingconeshop.webp" alt="Inside the Plover Shop Environment" height="300px" width="700px">
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			</div>
+
+		</main>
+
+		<footer>
+
+			<div class="footerbox">
+
+				<div class="footerlinks">
+					<a href="#">Terms of Use</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Cookie Settings</a>
+					<a href="#">Your Privacy Choices</a>
+					<a href="#">Web Accessibility</a>
+					<a href="#">Copyright. King Cone, LLC. 2020</a>
+					<a href="#">Created & Designed by Tasya Nambiar</a>
+				</div>
+
+				<div class="socialbox">
+					<a href="#"><img src="images/instagram.png" alt="Instagram" width="25px" height="25px"></a>
+					<a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
+					<a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>
